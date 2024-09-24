@@ -9,25 +9,37 @@
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
 </head>
+
 <body>
     <!-- header section -->
     <header>
         <div class=" navbar-section">
-            <nav class=" max-w-screen-lg mx-auto ">
-                <button class="btn bg-green-300 text-xl font-bold mx-2 my-4 md:my-4 ">Normal</button>
-                <div class="flex">
-                    <img src="assets/logo.png" alt="">
+            <!-- nav bar start -->
+            <nav class=" max-w-screen-lg mx-auto  flex justify-between ">
+
+                 <button id="btn-blog" class=" bg-lime-400 text-md font-semibold rounded-md py-2 px-4  mx-4 my-4 md:my-4 ">Blog</button>
+
+                <div class="flex  items-center gap-2 ">
+                    <img class="w-8 h-8  " src="assets/logo.png" alt="">
+                    <h2 class="font-semibold">Donate Bangladesh</h2>
                 </div>
+
+                <div class="flex  items-center">
+                    <img src="assets/coin.png" alt="">
+                    <p class="font-semibold ">
+                        <span id="main-balance" class="mx-2">5500</span>BDT
+                    </p>
+                </div>
+
             </nav>
-            
+              <!-- nav bar end -->
         </div>
-       
     </header>
     <!-- main section -->
     <main>
-                <h1>hellow</h1>
+
     </main>
 
 
@@ -37,4 +49,5 @@
     </footer>
 
 </body>
+
 </html>
