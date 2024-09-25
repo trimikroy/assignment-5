@@ -1,20 +1,13 @@
-//show the donate history
-document.getElementById('btn-history')
-.addEventListener('click', function(){
-  
+// donate history button
+const btnHistory = document.getElementById('btn-history');
+const btnDonation = document.getElementById('btn-donation');
+    btnHistory.addEventListener('click', function(){
     
-            // show donation history button clicked
-            document.getElementById('donate-history').classList.remove('hidden');
+    btnHistory.classList.add("bg-lime-300");
 
-            // hidden donate button show
-            document.getElementById('donation').classList.add('hidden');
-});
-// show the donate 
+    btnDonation.classList.remove("bg-lime-300");
 
-document.getElementById('btn-donation')
-.addEventListener('click', function(){
-   
-    document.getElementById('donation').classList.remove('hidden');
+    document.getElementById("donation").classList.add('hidden');
+    
 
-    document.getElementById('donate-history').classList.add('hidden');
 });
