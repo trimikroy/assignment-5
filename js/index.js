@@ -8,32 +8,25 @@ document.getElementById('btn-donate')
     const mainBalance = parseFloat( document.getElementById('main-balance').innerText);
     const donateAmount = parseFloat(document.getElementById('donate-amount').innerText);
      //console.log(addDonate , mainBalance , donateAmount);
-    if( addDonate > 0 &&  addDonate <= mainBalance ){
-        document.getElementById('main-balance').innerText;
 
-
-    }
-    else{
-        alert('invalid number');
-    }
-
-
-    
+     
 
     if ( Number(addDonate) && addDonate > 0  ){
+
+        if( addDonate > mainBalance){
+            alert("invalid");
+            return;
+        }
 
         const remainingMainBalance = mainBalance - addDonate;
         const newDonateAmount = donateAmount + addDonate ;
         
-        
-
-
        // update with dom 
 
         document.getElementById('main-balance').innerText = remainingMainBalance;
         document.getElementById('donate-amount').innerText =  newDonateAmount;
         
-        document.getElementById('btn_donation').showModal();
+       
        
 
          //history card 
@@ -54,14 +47,15 @@ document.getElementById('btn-donate')
 
          const historyContainer = document.getElementById("donate-history");
          historyContainer.insertBefore(historyItem, historyContainer.firstChild );
+
+         document.getElementById('btn_donation').showModal();
+
+        
     }
     else{
         alert('Invalid Number !');
-    }
-
-   
-     
-
+    }    
+    
 });
 
 
@@ -105,6 +99,8 @@ document.getElementById('btn-donate-feni')
 
          const historyContainer = document.getElementById("donate-history");
          historyContainer.insertBefore(historyItem, historyContainer.firstChild );
+
+         document.getElementById('btn_donation').showModal();
     }
     else{
         alert('Invalid Number !');
@@ -129,10 +125,8 @@ document.getElementById('btn-donate-injured')
        const remainingMainBalance = mainBalance - addDonate;
         const newDonateAmount = donateAmount + addDonate ;
       
-           // console.log(remainingMainBalance);
-
+          
        // update with dom 
-
         document.getElementById('main-balance').innerText = remainingMainBalance;
         document.getElementById('donate-amount-injured').innerText =  newDonateAmount;
 
@@ -154,6 +148,9 @@ document.getElementById('btn-donate-injured')
 
          const historyContainer = document.getElementById("donate-history");
          historyContainer.insertBefore(historyItem, historyContainer.firstChild );
+
+         document.getElementById('btn_donate_injured').showModal();
+        
     }
     else{
         alert('Invalid Number !');
