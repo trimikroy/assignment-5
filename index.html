@@ -70,12 +70,12 @@
                     <!-- amount button  -->
                    
                     <button 
-                        id="btn-amount-noakhali"
+                        id="btn-amount"
 
                         class=" btn flex gap-1 py-2 px-4 rounded-md font-semibold text-gray-400 bg-gray-100 border border-gray-300">
                         <img class="w-6" src="assets/coin.png" alt="">
 
-                        <span>00</span>BD
+                        <span id="donate-amount">00</span>BD
 
                     </button>
                     <h3 class="text-lg font-bold my-2">Donate for Flood at Noakhali, Bangladesh</h3>
@@ -86,24 +86,27 @@
 
                     <!-- input field noakhali donation -->
                         <input 
-                            id="add-noakhali-donate"
+                            id="add-donate"
                             type="number" 
                             class=" border border-gray-300 rounded-md   w-full mt-8 p-2"  
                             placeholder="Write Donation Amount">
                         </input>
+                        <p id="donate-error" class="text-red-500 text-xs mt-1 hidden">
+                            ⚠️ Invalid income!
+                          </p>
                   
                         <!--donate button modal  -->
                         <button 
-                            
-                         class="btn btn-wide w-full bg-lime-300 py-2
-                          px-4 mt-8 text-lg font-bold"
-                          onclick="btn_noakhali_donatioin.showModal()"
-                          >
+                           id="btn-donate" 
+                            class="btn btn-wide w-full bg-lime-300 py-2
+                            px-4 mt-8 text-lg font-bold" 
+                            onclick="btn_donatioin.showModal()"
+                            >
+                           
                            Donate Now
-                        </button>
+                        </button>  
 
-                        <!-- modal secttion -->
-                        <dialog id="btn_noakhali_donatioin" class="modal modal-middele md:modal-middle  ">
+                        <dialog id="btn_donatioin" class=" modal modal-middele md:modal-middle  ">
                             <div class="border border-red-600 w-2/4 md:w-3/4 modal-box flex flex-col items-center">
                               <h3 class="text-4xl font-bold">Congrats!</h3>
                               <img class="my-4" src="assets/coin.png" alt="">
@@ -111,12 +114,12 @@
                               <h3 class="text-2xl font-bold text-green-500">Successfully</h3>
                               <div class="modal-action">
                                 <form method="dialog">
-
+                       
                                   <!-- if there is a button in form, it will close the modal -->
                                   <button class="btn">Close Confirmation</button>
                                 </form>
                               </div>
-
+                       
                             </div>
                         </dialog>
                 </div>
@@ -125,114 +128,127 @@
 
 
         <!-- donation card--2 Feni Donation -->
-            <div class="h-auto p-4 rounded-lg flex flex-col md:flex-row justify-center gap-4 border border-gray-300">
+        <div class="h-auto p-4 rounded-lg flex flex-col md:flex-row justify-center gap-4 border border-gray-300">
 
-                <img class=" md:w-3/6 " src="assets/feni.png" alt="">
-                <!-- donate  -->
-                <div class="md:w-3/6 p-2  ">
+            <img class=" md:w-3/6 " src="assets/feni.png" alt="">
+            <!-- donate Noakhali -->
+            <div class="md:w-3/6 p-2  ">
 
-                    <!-- amount button  -->
-                    <button id="btn-amount-feni"
-                        class="flex gap-1 py-2 px-4 rounded-md font-semibold text-gray-400 bg-gray-100 border border-gray-300">
-                        <img class="w-6" src="assets/coin.png" alt="">
-                        <span>00</span>BD
+                <!-- amount button  -->
+               
+                <button 
+                    id="btn-amount-feni"
 
-                    </button>
-                    <h3 class="text-lg font-bold my-2">Donate for Flood Relief in Feni,Bangladesh</h3>
-                    <p class="text-sm mt-4"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+                    class=" btn flex gap-1 py-2 px-4 rounded-md font-semibold text-gray-400 bg-gray-100 border border-gray-300">
+                    <img class="w-6" src="assets/coin.png" alt="">
 
-                    <!-- input field feni donation -->
+                    <span id="donate-amount-feni">00</span>BD
+
+                </button>
+                <h3 class="text-lg font-bold my-2">Donate for Flood Relief in Feni,Bangladesh</h3>
+                <p class="text-sm mt-4"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+
+                <!-- input field noakhali donation -->
                     <input 
-                        id="add-feni-donate" 
-                        class=" border border-gray-300 rounded-md w-full    mt-8 p-2"
-                         type="number" name="" placeholder="Write Donation Amount">
+                        id="add-donate-feni"
+                        type="number" 
+                        class=" border border-gray-300 rounded-md   w-full mt-8 p-2"  
+                        placeholder="Write Donation Amount">
                     </input>
-
-                    <!--donate button  -->
-                        <button 
-                    
-                        class="
-                        btn btn-wide w-full bg-lime-300 
-                        py-2 px-4 mt-8 text-lg font-bold"
-                        onclick="btn_feni_donatioin.showModal()" 
+                    <p id="donate-error" class="text-red-500 text-xs mt-1 hidden">
+                        ⚠️ Invalid income!
+                      </p>
+              
+                    <!--donate button modal  -->
+                    <button 
+                       id="btn-donate-feni" 
+                        class="btn btn-wide w-full bg-lime-300 py-2
+                        px-4 mt-8 text-lg font-bold" 
+                        onclick="btn_donatioin_feni.showModal()"
                         >
-                         
-                            Donate Now
-                        </button>
+                       
+                       Donate Now
+                    </button>  
 
-                        <!-- modal secttion -->
-                        <dialog id="btn_feni_donatioin" class="modal modal-middele md:modal-middle  ">
-                            <div class="border border-red-600 w-2/4 md:w-3/4 modal-box flex flex-col items-center">
-                              <h3 class="text-4xl font-bold">Congrats!</h3>
-                              <img class="my-4" src="assets/coin.png" alt="">
-                              <p class="py-2 text-center text-[12px] md:text-lg">You Are Donate For HumanKind</p>
-                              <h3 class="text-2xl font-bold text-green-500">Successfully</h3>
-                              <div class="modal-action">
-                                <form method="dialog">
-
-                                  <!-- if there is a button in form, it will close the modal -->
-                                  <button class="btn">Close Confirmation</button>
-                                </form>
-                              </div>
-
-                            </div>
-                        </dialog>
-                </div>
+                    <dialog id="btn_donatioin_feni" class=" modal modal-middele md:modal-middle  ">
+                        <div class="border border-red-600 w-2/4 md:w-3/4 modal-box flex flex-col items-center">
+                          <h3 class="text-4xl font-bold">Congrats!</h3>
+                          <img class="my-4" src="assets/coin.png" alt="">
+                          <p class="py-2 text-center text-[12px] md:text-lg">You Are Donate For HumanKind</p>
+                          <h3 class="text-2xl font-bold text-green-500">Successfully</h3>
+                          <div class="modal-action">
+                            <form method="dialog">
+                   
+                              <!-- if there is a button in form, it will close the modal -->
+                              <button class="btn">Close Confirmation</button>
+                            </form>
+                          </div>
+                   
+                        </div>
+                    </dialog>
             </div>
-
+        </div>
 
         <!-- donation card--3 injured Donation -->
-            <div class="h-auto p-4 rounded-lg flex flex-col md:flex-row justify-center gap-4 border border-gray-300">
+        <div class="h-auto p-4 rounded-lg flex flex-col md:flex-row justify-center gap-4 border border-gray-300">
 
-                <img class=" md:w-3/6 " src="assets/quota-protest.png" alt="">
-                <!-- donate  -->
-                <div class="md:w-3/6 p-2  ">
+            <img class=" md:w-3/6 " src="assets/quota-protest.png" alt="">
+            <!-- donate Noakhali -->
+            <div class="md:w-3/6 p-2  ">
 
-                    <!-- amount button  -->
-                    <button id="btn-amount-injured"
-                        class="flex gap-1 py-2 px-4 rounded-md font-semibold text-gray-400 bg-gray-100 border border-gray-300">
-                        <img class="w-6" src="assets/coin.png" alt="">
-                        <span>00</span>BD
+                <!-- amount button  -->
+               
+                <button 
+                
+                    class=" btn flex gap-1 py-2 px-4 rounded-md font-semibold text-gray-400 bg-gray-100 border border-gray-300">
+                    <img class="w-6" src="assets/coin.png" alt="">
 
-                    </button>
-                    <h3 class="text-lg font-bold my-2">Aid for Injured in the Quota Movement</h3>
-                    <p class="text-sm mt-4"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+                    <span id="donate-amount-injured">00</span>BD
 
-                    <!-- input field injured donation -->
+                </button>
+                <h3 class="text-lg font-bold my-2">Aid for Injured in the Quota Movement</h3>
+                <p class="text-sm mt-4"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+
+                <!-- input field noakhali donation -->
                     <input 
-                        id="add-injured-donate" 
-                         class=" border border-gray-300 rounded-md w-full mt-8 p-2"
-                        type="number" name="" placeholder="Write Donation Amount">
-                     </input>
+                        id="add-donate-injured"
+                        type="number" 
+                        class=" border border-gray-300 rounded-md   w-full mt-8 p-2"  
+                        placeholder="Write Donation Amount">
+                    </input>
+                    <p id="donate-error" class="text-red-500 text-xs mt-1 hidden">
+                        ⚠️ Invalid income!
+                      </p>
+              
+                    <!--donate button modal  -->
+                    <button 
+                        id="btn-donate-injured" 
+                        class="btn btn-wide w-full bg-lime-300 py-2
+                        px-4 mt-8 text-lg font-bold" 
+                        onclick="btn_donate_injured.showModal()"
+                        >
+                       
+                       Donate Now
+                    </button>  
 
-                     <!--donate button  -->
-                     <button 
-                     id="btn-injured-donation"
-                     class="btn btn-wide w-full bg-lime-300 py-2 px-4 mt-8 text-lg font-bold"
-                     onclick="btn_injured_donatioin.showModal()" 
-                     >
-                         Donate Now
-                     </button>
-
-                     <!-- modal secttion -->
-                     <dialog id="btn_injured_donatioin" class="modal modal-middele md:modal-middle  ">
-                         <div class="border border-red-600 w-2/4 md:w-3/4 modal-box flex flex-col items-center">
-                           <h3 class="text-4xl font-bold">Congrats!</h3>
-                           <img class="my-4" src="assets/coin.png" alt="">
-                           <p class="py-2 text-center text-[12px] md:text-lg">You Are Donate For HumanKind</p>
-                           <h3 class="text-2xl font-bold text-green-500">Successfully</h3>
-                           <div class="modal-action">
-                             <form method="dialog">
-
-                               <!-- if there is a button in form, it will close the modal -->
-                               <button class="btn">Close Confirmation</button>
-                             </form>
-                           </div>
-
-                         </div>
-                     </dialog>
-                </div>
+                    <dialog id="btn_donate_injured"  class=" modal modal-middele md:modal-middle  ">
+                        <div class="border border-red-600 w-2/4 md:w-3/4 modal-box flex flex-col items-center">
+                          <h3 class="text-4xl font-bold">Congrats!</h3>
+                          <img class="my-4" src="assets/coin.png" alt="">
+                          <p class="py-2 text-center text-[12px] md:text-lg">You Are Donate For HumanKind</p>
+                          <h3 class="text-2xl font-bold text-green-500">Successfully</h3>
+                          <div class="modal-action">
+                            <form method="dialog">
+                   
+                              <!-- if there is a button in form, it will close the modal -->
+                              <button class="btn">Close Confirmation</button>
+                            </form>
+                          </div>
+                   
+                        </div>
+                    </dialog>
             </div>
+        </div>
 
         </section>
     </main>
@@ -243,6 +259,7 @@
         
     </footer>
 
+    <script src="js/index.js"></script>
 </body>
 
 </html>
