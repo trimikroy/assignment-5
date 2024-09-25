@@ -20,7 +20,7 @@
             <nav class=" max-w-screen-lg mx-auto  flex justify-between ">
 
                 <button id="btn-blog"
-                    class="btn w-16 md:w-20 bg-lime-300 text-md font-bold rounded-md py-2 px-2  mx-4 my-4 md:my-4 ">Blog</button>
+                    class="btn w-16 md:w-20 bg-lime-300 text-md font-bold rounded-md py-2 px-2  mx-4 my-4 md:my-4" ><a href="home.html">Blog</a></button>
 
                 <div class="flex  items-center gap-2  ">
                     <img class="w-4 h-4  md:w-8 md:h-8  " src="assets/logo.png" alt="">
@@ -101,13 +101,14 @@
                            id="btn-donate" 
                             class="btn btn-wide w-full bg-lime-300 py-2
                             px-4 mt-8 text-lg font-bold" 
-                            onclick="btn_donatioin.showModal()"
+                                onclick="btn_donation.showModal()"
+
                             >
                            
                            Donate Now
                         </button>  
 
-                        <dialog id="btn_donatioin" class=" modal modal-middele md:modal-middle  ">
+                        <dialog id="btn_donation" class=" modal modal-middele md:modal-middle  ">
                             <div class="border border-red-600 w-2/4 md:w-3/4 modal-box flex flex-col items-center">
                               <h3 class="text-4xl font-bold">Congrats!</h3>
                               <img class="my-4" src="assets/coin.png" alt="">

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="navbar-section">
+            <nav class=" max-w-screen-lg mx-auto  flex justify-between ">
+
+                <button id="btn-blog"
+                    class="btn w-16 md:w-20 bg-lime-300 text-md font-bold rounded-md py-2 px-2  mx-4 my-4 md:my-4"><a href="index.html">Home</a></button>
+
+                <div class="flex  items-center gap-2  ">
+                    <img class="w-4 h-4  md:w-8 md:h-8  " src="assets/logo.png" alt="">
+                    <h2 class="text-sm md:text-lg font-bold">Donate Bangladesh</h2>
+                </div>
+
+                <div class="flex items-center mr-4">
+                    <img class="w-4 md:w-6" src="assets/coin.png" alt="">
+                    <p class="font-semibold text-sm md:text-lg ">
+                        <span id="main-balance" class="mx-2 ">5500</span>BDT
+                    </p>
+                </div>
+
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <section class="max-w-screen-lg mx-auto my-6 ">
+
+            <div tabindex="0" class="collapse collapse-plus border-base-300 bg-base-200 border ">
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                    <p class=" bg-white p-4 rounded-md my-2">Tree Structure: The DOM represents the HTML document as a tree where each node corresponds to a part of the document</p>
+                    <p class=" bg-white p-4 rounded-md my-2">Access and Manipulation: Using JavaScript, you can interact with elements in the DOM.</p>
+                    <p class=" bg-white p-4 rounded-md my-2">Live Representation: The DOM updates in real-time as the HTML document is modified. For example, if you use JavaScript to change an element, it immediately updates on the webpage</p>
+                </div>
+            </div>
+
+
+            <div tabindex="0" class="collapse collapse-plus border-base-300 bg-base-200 border my-4 ">
+                <div class="collapse-title text-xl font-medium">How do you select element for DOM ?</div>
+                <div class="collapse-content">
+                    <p class=" bg-white p-4 rounded-md my-2">1. Selecting by ID: getElementById()
+                        This method selects an element based on its unique id attribute.</p>
+
+                    <p class=" bg-white p-4 rounded-md my-2">Selecting by Class Name: getElementsByClassName()
+                        This method returns a live collection (HTMLCollection) of all elements with a specific class name. It can be looped through or indexed.</p>
+                        
+                    <p class=" bg-white p-4 rounded-md my-2">Live Representation: The DOM updates in real-time as the HTML document is modified. For example, if you use JavaScript to change an element, it immediately updates on the webpage</p>
+
+                    <p class=" bg-white p-4 rounded-md my-2">4. Selecting by CSS Selector: querySelector()
+                        This method returns the first element that matches a given CSS selector. The selector can be an ID, class, tag name, or more complex combinations.</p>
+
+                    <p class=" bg-white p-4 rounded-md my-2">5. Selecting by CSS Selector (All Matching Elements): querySelectorAll()
+                        This method returns a static NodeList (not live like getElementsByClassName) of all elements that match a given CSS selector.</p>
+                    <p class=" bg-white p-4 rounded-md my-2">6. Selecting Form Elements by Name: getElementsByName()
+                        This method selects elements based on the name attribute (commonly used in forms).</p>
+
+
+                </div>
+            </div>
+
+            <div tabindex="0" class="collapse collapse-plus border-base-300 bg-base-200 border ">
+                <div class="collapse-title text-xl font-medium">What is Event delegation in the context of the DOM, and Why is it useful? </div>
+                <div class="collapse-content">
+                    <p class=" bg-white p-4 rounded-md my-2">1. Event Bubbling: When an event is triggered on an element (like a click on a button), that event doesn't just affect the element itself. It starts at the element and "bubbles up" through its ancestors (the parent, grandparent, etc.) all the way to the document object.  </p>
+                    <p class=" bg-white p-4 rounded-md my-2">Capturing the Event: Using event delegation, you can listen for the event at a parent level, capture the bubbling event, and determine which child element actually triggered it by inspecting the event's target (event.target).</p>
+                   
+                </div>
+            </div>
+
+            <div tabindex="0" class="collapse collapse-plus border-base-300 bg-base-200 border my-4 ">
+                <div class="collapse-title text-xl font-medium">How Do you manipulate an elements attribute and style using the DOM ?</div>
+                <div class="collapse-content">
+                    <p class=" bg-white p-4 rounded-md my-2">1. Manipulating Element Attributes
+                        To modify or access the attributes of an element (like src, href, id, value, etc.), you can use methods like getAttribute(), setAttribute(), or directly access the properties.</p>
+                    <p class=" bg-white p-4 rounded-md my-2">2. Manipulating Element Styles
+                        To manipulate the inline styles of an element, you can use the style property of the element. This allows you to set CSS properties directly using JavaScript.</p>
+                    <p class=" bg-white p-4 rounded-md my-2">3. Adding or Removing Classes to Manipulate Styles
+                        Instead of directly modifying styles, a cleaner approach is to add or remove CSS classes, which allows you to separate logic from presentation.</p>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
